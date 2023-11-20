@@ -40,7 +40,7 @@
 </script>
 
 <div
-	class="bg-black text-xl font-mono text-gray-200 flex flex-col justify-center items-center min-h-screen"
+	class=" bg-black text-xl font-mono text-gray-200 flex flex-col justify-center items-center min-h-screen"
 >
 	<input
 		placeholder="Add Todo"
