@@ -1,8 +1,10 @@
 <script>
-	let text = $state('');
-	let todos = $state([]);
+	import { onMount } from 'svelte';
 
-	let isFocus = $state(false);
+	let text = '';
+	let todos = [];
+
+	let isFocus = false;
 
 	function remove(idx) {
 		todos = todos.filter((item, index) => index !== idx);
@@ -29,14 +31,14 @@
 		todos = temp;
 	}
 
-	$effect(() => {
+	onMount(() => {
 		const storagTodos = localStorage.getItem('todos');
 		storagTodos && (todos = JSON.parse(storagTodos));
 	});
 
-	$effect(() => {
+	$: {
 		localStorage.setItem('todos', JSON.stringify(todos));
-	});
+	}
 </script>
 
 <div

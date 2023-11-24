@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	let { text, todos, todo, idx } = $props();
 
 	let isFocus = $state(false);
@@ -42,4 +42,4 @@
 		class="text-xl font-extrabold active:border-2 active:border-gray-200 w-8 p-1 rounded rounded-full"
 		on:click={() => remove(idx)}>X</button
 	>
-</div>
+</div> -->
